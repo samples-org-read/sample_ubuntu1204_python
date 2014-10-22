@@ -6,6 +6,7 @@ python:
   - 2.7
   - 3.3
   - 3.4
+  - pypy
   
 before_install:
   # We're going to set up a virtualenv and activate the python version we want to use
@@ -18,6 +19,7 @@ install:
 
 # Make folders for the reports
 before_script:
+  - python --version
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
 
