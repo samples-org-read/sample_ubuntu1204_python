@@ -1,12 +1,12 @@
 language: python
 
 
-build_image: shippableimages/ubuntu1204_python
+build_image: shippableimages/ubuntu1204_python: 0.0.2
 
 python:
   - 2.7
- # - 3.3
-  #- 3.4
+  - 3.3
+  - 3.4
  
 before_install:
   # We're going to set up a virtualenv and activate the python version we want to use
