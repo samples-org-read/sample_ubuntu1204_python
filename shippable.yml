@@ -1,7 +1,7 @@
 language: python
 
 
-build_image: shippableimages/ubuntu1204_python
+build_image: shippableimages/ubuntu1204_python:0.0.1
 
 python:
   - 2.7
