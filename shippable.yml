@@ -30,10 +30,11 @@ script:
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
 #commit_container: shipci/sample_ubuntu1204_python
 images:
- image:
-  build:
-   type: docker
-   name: shippableimages/ubuntu1204_python
-   tag: latest
+  image:
+   build:
+     type: docker
+     build: true
+     name: shippableimages/ubuntu1204_python
+     tag: latest
 # cache: true
-   code_path: /home/avinci/src
+     code_path: /home/avinci/src
