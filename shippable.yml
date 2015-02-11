@@ -1,7 +1,7 @@
 language: python
 
 #cache: true
-build_image: shippableimages/ubuntu1204_python
+build_image: shippableimages/ubuntu1404_python
 
 python:
   - 2.7
