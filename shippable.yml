@@ -1,7 +1,8 @@
 language: python
 
 #cache: true
-build_image: shippableimages/ubuntu1204_python:0.0.3
+build_image: shippableimages/ubuntu1204_python
+#:0.0.3
 
 python:
   - 2.7
@@ -20,6 +21,7 @@ install:
 
 # Make folders for the reports
 before_script:
+  - git version
   - python --version
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
