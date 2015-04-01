@@ -33,3 +33,9 @@ script:
   - which python && coverage run --branch test.py
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
 #commit_container: shipci/sample_ubuntu1204_python
+
+
+after_success:
+- echo "success"
+after_failure:
+- echo "failed"
