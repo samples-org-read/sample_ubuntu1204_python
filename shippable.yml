@@ -39,3 +39,5 @@ after_success:
 - echo "success"
 after_failure:
 - echo "failed"
+
+archive: true
