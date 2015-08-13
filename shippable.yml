@@ -33,4 +33,10 @@ script:
   
 after_script:
   - echo "build completed"
+  
+after_success:
+  - echo "build passed"
+  
+after_failure:
+  - echo "build failed"
 #commit_container: shipci/sample_ubuntu1204_python
